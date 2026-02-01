@@ -1,0 +1,51 @@
+###########################################################################
+# Jeeos-0.11 QEMU 运行配置
+###########################################################################
+
+MAKEFLAGS = -sR
+
+VBOX_PATH = ../build/vbox
+RELEASE_PATH = ../build/release
+HDISK_PATH = ../hdisk
+QCOW2_IMG = $(VBOX_PATH)/hdisk.qcow2
+RAW_IMG = $(VBOX_PATH)/hd.img
+
+# QEMU 配置 - 使用 raw 格式直接启动，避免格式转换问题
+QEMU = qemu-system-x86_64
+# -serial file: 串口输出到文件，避免阻塞管道
+QEMU_OPTS = -m 512 -smp 1 -vga std -serial file:/tmp/serial.log -no-reboot -no-shutdown
+QEMU_DEBUG_OPTS = -s -S -serial stdio
+
+.PHONY : all run debug moutraw tranvdi clean
+
+# 默认: 运行 (直接使用raw格式)
+all: moutraw run
+
+# 调试模式: 等待GDB连接
+debug: moutraw
+	@echo "========================================"
+	@echo "  Jeeos-0.11 Debug Mode"
+	@echo "  GDB连接: target remote :1234"
+	@echo "========================================"
+	$(QEMU) -drive file=$(RAW_IMG),format=raw,if=ide $(QEMU_OPTS) $(QEMU_DEBUG_OPTS)
+
+# 正常运行 (使用raw格式)
+run:
+	@echo "========================================"
+	@echo "  Jeeos-0.11 Running..."
+	@echo "========================================"
+	$(QEMU) -drive file=$(RAW_IMG),format=raw,if=ide $(QEMU_OPTS)
+
+# 转换为qcow2格式 (可选，VirtualBox使用)
+tranvdi:
+	@echo "[QEMU] 转换镜像格式..."
+	qemu-img convert -f raw -O qcow2 $(RAW_IMG) $(QCOW2_IMG)
+
+# 复制内核到磁盘镜像 (使用 debugfs，不需要 sudo)
+moutraw:
+	@echo "[QEMU] 安装内核镜像..."
+	debugfs -w -R "rm /boot/jeeos.eki" $(RAW_IMG) 2>/dev/null || true
+	debugfs -w -R "write $(RELEASE_PATH)/jeeos.eki /boot/jeeos.eki" $(RAW_IMG)
+
+clean:
+	rm -f $(QCOW2_IMG)

@@ -1,0 +1,51 @@
+###########################################################################
+# Jeeos-0.11 QEMU 运行配置
+###########################################################################
+
+MAKEFLAGS = -sR
+
+VBOX_PATH = ../build/vbox
+RELEASE_PATH = ../build/release
+HDISK_PATH = ../hdisk
+QCOW2_IMG = $(VBOX_PATH)/hdisk.qcow2
+RAW_IMG = $(VBOX_PATH)/hd.img
+
+# QEMU 配置
+QEMU = qemu-system-x86_64
+QEMU_OPTS = -m 512 -smp 2 -serial stdio
+QEMU_DEBUG_OPTS = -s -S
+
+.PHONY : all run debug moutraw tranvdi clean
+
+# 默认: 运行
+all: moutraw tranvdi run
+
+# 调试模式: 等待GDB连接
+debug: moutraw tranvdi
+	@echo "========================================"
+	@echo "  Jeeos-0.11 Debug Mode"
+	@echo "  GDB连接: target remote :1234"
+	@echo "========================================"
+	$(QEMU) -hda $(QCOW2_IMG) $(QEMU_OPTS) $(QEMU_DEBUG_OPTS)
+
+# 正常运行
+run:
+	@echo "========================================"
+	@echo "  Jeeos-0.11 Running..."
+	@echo "========================================"
+	$(QEMU) -hda $(QCOW2_IMG) $(QEMU_OPTS)
+
+# 转换为qcow2格式
+tranvdi:
+	@echo "[QEMU] 转换镜像格式..."
+	qemu-img convert -f raw -O qcow2 $(RAW_IMG) $(QCOW2_IMG)
+
+# 挂载并复制内核
+moutraw:
+	@echo "[QEMU] 安装内核镜像..."
+	sudo mount -o loop $(RAW_IMG) $(HDISK_PATH)/
+	sudo cp $(RELEASE_PATH)/jeeos.eki $(HDISK_PATH)/boot/
+	sudo umount $(HDISK_PATH)/
+
+clean:
+	rm -f $(QCOW2_IMG)

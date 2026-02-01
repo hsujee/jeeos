@@ -1,0 +1,30 @@
+MAKEFLAGS = -sR
+.PHONY : all moutvmhd clean idectrnul crtidectr stratvm tranvdi moutraw
+
+all: moutraw tranvdi idectrnul crtidectr moutvmhd stratvm
+
+createvm:
+	VBoxManage createvm --name Jeeos -register
+
+crtidectr:
+	VBoxManage storagectl Jeeos --name "IDE" --add ide --controller PIIX4
+
+idectrnul:
+	VBoxManage storagectl Jeeos --name "IDE" --remove 
+
+moutvmhd:
+	VBoxManage closemedium disk ../build/vbox/hd.vdi
+	VBoxManage storageattach Jeeos --storagectl "IDE" --port 0 --device 0 --type hdd --medium ../build/vbox/hd.vdi
+	
+stratvm:
+	VBoxManage startvm Jeeos
+
+tranvdi:
+	VBoxManage convertfromraw ../build/vbox/hd.img --format VDI ../build/vbox/hd.vdi
+
+moutraw:
+	sudo mount -o loop ../build/vbox/hd.img ../hdisk/
+	sudo cp ../build/release/jeeos.eki ../hdisk/boot/
+	sudo umount ../hdisk/
+
+	

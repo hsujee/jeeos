@@ -1,0 +1,357 @@
+[
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/idt.c",
+    "file": "./arch/x86/kernel/idt.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/arch_trap.c",
+    "file": "./arch/x86/kernel/arch_trap.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/arch_init.c",
+    "file": "./arch/x86/kernel/arch_init.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/platform.c",
+    "file": "./arch/x86/kernel/platform.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/i8259.c",
+    "file": "./arch/x86/kernel/i8259.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/page_desc.c",
+    "file": "./arch/x86/kernel/page_desc.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/mmu.c",
+    "file": "./arch/x86/kernel/mmu.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/startup.c",
+    "file": "./arch/x86/kernel/startup.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/mm_init.c",
+    "file": "./arch/x86/kernel/mm_init.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/video.c",
+    "file": "./arch/x86/kernel/video.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/printk.c",
+    "file": "./arch/x86/kernel/printk.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/arch_global.c",
+    "file": "./arch/x86/kernel/arch_global.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/slab_alloc.c",
+    "file": "./arch/x86/kernel/slab_alloc.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/cpu_ops.c",
+    "file": "./arch/x86/kernel/cpu_ops.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/arch_mm.c",
+    "file": "./arch/x86/kernel/arch_mm.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/page_alloc.c",
+    "file": "./arch/x86/kernel/page_alloc.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/kernel/mem_zone.c",
+    "file": "./arch/x86/kernel/mem_zone.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/fs.c",
+    "file": "./arch/x86/boot/fs.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/bootsect_c.c",
+    "file": "./arch/x86/boot/bootsect_c.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/cpumem.c",
+    "file": "./arch/x86/boot/cpumem.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/graph.c",
+    "file": "./arch/x86/boot/graph.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/setup_c.c",
+    "file": "./arch/x86/boot/setup_c.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/bparam_c.c",
+    "file": "./arch/x86/boot/bparam_c.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./arch/x86/boot/vgastr.c",
+    "file": "./arch/x86/boot/vgastr.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./script/mkftool.c",
+    "file": "./script/mkftool.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/sem.c",
+    "file": "./kernel/sem.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/vmem.c",
+    "file": "./kernel/vmem.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/global.c",
+    "file": "./kernel/global.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/thread.c",
+    "file": "./kernel/thread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/mm.c",
+    "file": "./kernel/mm.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/interrupt.c",
+    "file": "./kernel/interrupt.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/cpu_idle.c",
+    "file": "./kernel/cpu_idle.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/mm_pages.c",
+    "file": "./kernel/mm_pages.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/main.c",
+    "file": "./kernel/main.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/device.c",
+    "file": "./kernel/device.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/time.c",
+    "file": "./kernel/time.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/io_node.c",
+    "file": "./kernel/io_node.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/spin_lock.c",
+    "file": "./kernel/spin_lock.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/wait_list.c",
+    "file": "./kernel/wait_list.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./kernel/sched.c",
+    "file": "./kernel/sched.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./drivers/drvuart.c",
+    "file": "./drivers/drvuart.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./drivers/drvtick.c",
+    "file": "./drivers/drvtick.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./drivers/drvrfs.c",
+    "file": "./drivers/drvrfs.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/syswrite.c",
+    "file": "./system/syswrite.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/sysmm.c",
+    "file": "./system/sysmm.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/sysopen.c",
+    "file": "./system/sysopen.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/syslseek.c",
+    "file": "./system/syslseek.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/syshandler.c",
+    "file": "./system/syshandler.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/sysioctrl.c",
+    "file": "./system/sysioctrl.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/systhread.c",
+    "file": "./system/systhread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/sysclose.c",
+    "file": "./system/sysclose.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./system/sysread.c",
+    "file": "./system/sysread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libopen.c",
+    "file": "./libs/libopen.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapitime.c",
+    "file": "./libs/lapitime.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapiioctrl.c",
+    "file": "./libs/lapiioctrl.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libclose.c",
+    "file": "./libs/libclose.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapimm.c",
+    "file": "./libs/lapimm.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libthread.c",
+    "file": "./libs/libthread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libmm.c",
+    "file": "./libs/libmm.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libread.c",
+    "file": "./libs/libread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/printf.c",
+    "file": "./libs/printf.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libwrite.c",
+    "file": "./libs/libwrite.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapiopen.c",
+    "file": "./libs/lapiopen.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapithread.c",
+    "file": "./libs/lapithread.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libtime.c",
+    "file": "./libs/libtime.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapiwrite.c",
+    "file": "./libs/lapiwrite.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/liblseek.c",
+    "file": "./libs/liblseek.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapiclose.c",
+    "file": "./libs/lapiclose.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapilseek.c",
+    "file": "./libs/lapilseek.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/libioctrl.c",
+    "file": "./libs/libioctrl.c"
+  },
+  {
+    "directory": "/home/jee/projects/jeeos/Jeeos-0.12",
+    "command": "gcc -c -I./arch/x86/include -I./arch/x86/boot/include -I./kernel/include -I./libs/include -I./libs/include/types -I./system/include -I./drivers/include -DCFG_X86_PLATFORM -std=c99 -o /dev/null ./libs/lapiread.c",
+    "file": "./libs/lapiread.c"
+  }
+]

@@ -1,0 +1,9 @@
+CCSTR		= 	'CC -[M] building... '$<
+PRINTCSTR 	=	@echo $(CCSTR) 
+
+%.o : $(CCBUILDPATH)%.c
+	$(CC) $(CFLAGS) -o $@ $<
+	$(PRINTCSTR)
+%.mh : $(CCBUILDPATH)%.S
+	$(CC) $(CPPFLGSLDS) -o $@ $<
+	$(PRINTCSTR)

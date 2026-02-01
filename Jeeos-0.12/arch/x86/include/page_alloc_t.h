@@ -1,0 +1,24 @@
+/*
+ * @Author: Jee Hsu
+ * @Description: 内存管理
+ *
+ * Copyright (c) 2025 Jee Hsu. SPDX-License-Identifier: MIT
+ */
+#ifndef ARCH_X86_PAGE_ALLOC_T_H
+#define ARCH_X86_PAGE_ALLOC_T_H
+
+#define DMF_RELDIV 0
+#define DMF_MAXDIV 1
+
+typedef struct s_MCHKSTUC {
+	list_h_t mc_list;
+	u64_t mc_phyadr;
+	u64_t mc_viradr;
+	u64_t mc_sz;
+	u64_t mc_chkval;
+	msadsc_t* mc_msa; 
+	u64_t* mc_chksadr;
+	u64_t* mc_chkeadr; 
+} mchkstuc_t;
+
+#endif // ARCH_X86_PAGE_ALLOC_T_H
