@@ -99,6 +99,7 @@ clean:
 	-@if [ -d $(BUILD_PATH) ]; then cd $(BUILD_PATH) && rm -f *.o *.bin *.i *.krnl *.s *.map *.lib *.btoj *.vdi *.elf *vmdk *.lds *.mk *.mki krnlobjs.mh *.mkf mkftool; fi
 	-@if [ -d $(RELEASE_PATH) ]; then cd $(RELEASE_PATH) && rm -f *.o *.bin *.i *.krnl *.s *.eki *.map *.lib *.btoj *.elf *.vdi *vmdk *.lds *.mk *.mki *.bmp *.fnt *.img krnlobjs.mh; fi
 	-@if [ -d $(BUILD_PATH) ]; then cd $(BUILD_PATH) && rm -rf release vbox; fi
+	-@if [ -d $(BUILD_PATH) ]; then rm -rf $(BUILD_PATH)/*; fi
 
 #---------------------------------------------------------------------------
 # 安装目标

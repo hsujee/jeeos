@@ -105,6 +105,7 @@ clean:
 	cd $(BUILD_PATH); rm -rf release
 	-@if [ -d $(BUILD_PATH)/vbox ]; then cd $(BUILD_PATH)/vbox && rm -f *.qcow2; fi
 	rm -rf hdisk
+	-@if [ -d $(BUILD_PATH) ]; then rm -rf $(BUILD_PATH)/*; fi
 
 #---------------------------------------------------------------------------
 # 安装目标

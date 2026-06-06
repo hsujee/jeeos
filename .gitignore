@@ -7,5 +7,22 @@ Jeeos-0.01/.cache
 Jeeos-0.11/.cache
 Jeeos-0.12/.cache
 
+Jeeos-0.01/docs
+Jeeos-0.01/build
+
+Jeeos-0.11/docs
+Jeeos-0.11/build
+Jeeos-0.11/arch/x86/boot/build/*.o
+Jeeos-0.11/arch/x86/boot/build/*.bin
+Jeeos-0.11/arch/x86/boot/build/*.map
+Jeeos-0.11/arch/x86/boot/build/*.elf
+Jeeos-0.11/tools/buildtool/build/*.o
+
 Jeeos-0.12/docs
+Jeeos-0.12/build
 Jeeos-0.12/Documentation
+Jeeos-0.12/arch/x86/boot/build/*.o
+Jeeos-0.12/arch/x86/boot/build/*.bin
+Jeeos-0.12/arch/x86/boot/build/*.map
+Jeeos-0.12/arch/x86/boot/build/*.elf
+Jeeos-0.12/tools/buildtool/build/*.o
